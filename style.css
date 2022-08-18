@@ -44,6 +44,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: 150px 0;
+    flex-wrap: wrap;
 }
 
 .left {
@@ -84,6 +85,8 @@ nav {
 .service-top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .service-top h1 {
@@ -134,6 +137,8 @@ nav {
 
 .price-cards {
     display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
     justify-content: space-evenly;
     height: 90vh;
 }
@@ -309,4 +314,67 @@ footer {
     display: flex;
     gap: 10px;
     list-style: none;
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 10px 20px;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .post .right img {
+        display: none;
+    }
+
+    .post .left {
+        width: 100%;
+    }
+    .service-card {
+        width: 100%;
+    }
+
+    .service-top h1, .service-top p {
+        width: 100%;
+    }
+
+    .price-card {
+        width: 80vw;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+
+    .register-left h1 {
+        font-size: 20px;
+    }
+
+    .register-left p {
+        font-size: 10px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .socials, .links, .about {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .pricing {
+        height: 350vh;
+        margin: 0;
+    }
+
+    .price-cards {
+        justify-content: center;
+    }
+
+    .price-heading h1 {
+        font-size: 30px;
+    }
 }
